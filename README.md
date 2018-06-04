@@ -127,7 +127,8 @@ defmodule PhoenixDemoWeb.Endpoint do
 end
 ```
 
-And finally, you need to start the endpoint via `SiteEncrypt`:
+And finally, replace `supervisor(PhoenixDemoWeb.Endpoint, []),`
+and start the endpoint from `SiteEncrypt`.
 
 ```elixir
 defmodule PhoenixDemo.Application do
@@ -145,6 +146,7 @@ defmodule PhoenixDemo.Application do
   # ...
 end
 ```
+
 
 And that's it! At this point you can start the system:
 
